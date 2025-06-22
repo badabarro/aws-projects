@@ -3,9 +3,7 @@
 # Définition du mot de passe MySQL root
 DATABASE_PASS='admin123'
 
-##################################
-# 📦 Installation de Memcached
-##################################
+
 
 # Activation du dépôt EPEL (Extra Packages for Enterprise Linux)
 yum install epel-release -y
@@ -24,9 +22,7 @@ systemctl status memcached
 memcached -p 11211 -U 11111 -u memcached -d
 
 
-##################################
-# 📦 Installation de RabbitMQ
-##################################
+
 
 # Installation des dépendances nécessaires
 yum install socat -y
@@ -61,9 +57,7 @@ rabbitmqctl set_user_tags rabbit administrator
 systemctl restart rabbitmq-server
 
 
-##################################
-# 📦 Installation et configuration de MySQL (MariaDB)
-##################################
+
 
 # Installation du serveur MariaDB
 yum install mariadb-server -y
